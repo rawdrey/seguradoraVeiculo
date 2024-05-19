@@ -14,6 +14,7 @@ namespace seguradoraVeiculo
             Moto moto = new Moto();
             Seguro seguro = new Seguro();
             Console.WriteLine("Digite  os dados do carro:");
+            Console.WriteLine("Informe a placa do veículo:");
             Console.WriteLine(" Marca;");
             carro.Marca = Console.ReadLine();
             Console.WriteLine("Modelo:");

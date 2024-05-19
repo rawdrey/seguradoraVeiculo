@@ -8,7 +8,9 @@ namespace seguradoraVeiculo
 {
     public class Veiculo
     {
+        public string Placa { get; }
 public string Marca { get; set; }
+
         public string Modelo { get; set; }
         public int Ano { get; set; }
         public double ValorVeiculo { get; set; }
