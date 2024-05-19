@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace seguradoraVeiculo
 {
-    class Veiculo
+    public class Veiculo
     {
 public string Marca { get; set; }
         public string Modelo { get; set; }

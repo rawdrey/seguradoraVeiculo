@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace seguradoraVeiculo
 {
-    class Moto
+    public class Moto : Veiculo
     {
+public int Cilindradas { get; set; }
+        public override double CalcularSeguro()
+        {
+   
+                return ValorVeiculo * 0.03;
+            }
+        
+
     }
 }

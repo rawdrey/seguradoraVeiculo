@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace seguradoraVeiculo
 {
-    public class Carro : Veiculo
+    public class Seguro
     {
-        public int QuantidadePortas { get; set; }
-        public override double CalcularSeguro()
+    public double CalcularSeguro(Veiculo veiculo)
         {
-            return ValorVeiculo * 0.07;
+            return veiculo.CalcularSeguro(); 
         }
+
     }
 }
