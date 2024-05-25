@@ -8,10 +8,18 @@ namespace seguradoraVeiculo
 {
     public class Seguro
     {
-    public double CalcularSeguro(Veiculo veiculo)
+        private bool seguroAtivo = false;
+
+        public double CalcularSeguro(Veiculo veiculo)
         {
-            return veiculo.CalcularSeguro(); 
+            ArgumentOutOfRangeExceptiif(seguroAtivo)
+                {
+                throw InvalidOperationException(Já existe um seguro em andamento);
+            }
+            seguroAtivo = true;
+return veiculo.CalcularSeguro(); 
         }
 
     }
 }
+    
